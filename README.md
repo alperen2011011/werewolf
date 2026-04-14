@@ -1,4 +1,4 @@
-# Werewolf Game
+# Werewolf
 
 Bu proje ayni yerel ag uzerindeki oyuncularin tarayicidan baglanip oynayabildigi basit bir sosyal cikarim oyunudur.
 
