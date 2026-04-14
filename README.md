@@ -1,4 +1,4 @@
-# Werewolf
+# Werewolf Game
 
 Bu proje ayni yerel ag uzerindeki oyuncularin tarayicidan baglanip oynayabildigi basit bir sosyal cikarim oyunudur.
 
@@ -31,6 +31,16 @@ http://192.168.1.25:3000
 ```
 
 ## Windows Icin
+
+### 0. Node.js Yukle
+
+Windows kullanicilarinin oncelikle Node.js'i resmi sitesinden indirmesi gerekir:
+
+```text
+https://nodejs.org/
+```
+
+Node.js kurulduktan sonra PowerShell veya Komut Istemi'nde sunu calistirin:
 
 ### 1. Oyunu baslat
 
@@ -133,4 +143,3 @@ Eger arkadaslarin baglanamiyorsa sunlari kontrol et:
 - Herkes ayni modem veya ayni Wi-Fi uzerinde mi?
 - Guvenlik duvari `3000` portunu engelliyor olabilir mi?
 - Tarayicida `localhost:3000` yerine host bilgisayarin IP adresi mi kullaniliyor?
-- -Ve arıca farklı bilgisayarlardaysanız 'localh
