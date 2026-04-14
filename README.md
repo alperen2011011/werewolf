@@ -133,3 +133,4 @@ Eger arkadaslarin baglanamiyorsa sunlari kontrol et:
 - Herkes ayni modem veya ayni Wi-Fi uzerinde mi?
 - Guvenlik duvari `3000` portunu engelliyor olabilir mi?
 - Tarayicida `localhost:3000` yerine host bilgisayarin IP adresi mi kullaniliyor?
+- -Ve arıca farklı bilgisayarlardaysanız 'localh
