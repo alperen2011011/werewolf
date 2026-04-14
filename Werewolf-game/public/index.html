@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gece Koyu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-glow"></div>
+
+  <section id="login" class="panel login-panel">
+    <p class="eyebrow">Tarayici tabanli sosyal strateji</p>
+    <h1>Gece Koyu</h1>
+    <p>10 kisi tamamlaninca herkesin rolu otomatik atanir. Gece 90 saniye surer ve aksiyonlari oyuncular belirler.</p>
+    <div class="login-row">
+      <input id="name" maxlength="20" placeholder="Oyuncu ismi">
+      <button onclick="join()">Koye Katil</button>
+    </div>
+    <p id="joinHint" class="muted">Ayni isim iki kez kullanilamaz.</p>
+  </section>
+
+  <main id="game" class="game-shell" style="display:none;">
+    <section class="panel hud-panel">
+      <div>
+        <p class="eyebrow">Durum</p>
+        <h2 id="phase">lobby</h2>
+      </div>
+      <div class="timer-wrap">
+        <span>Sure</span>
+        <strong id="timer">00:00</strong>
+      </div>
+      <div>
+        <p class="eyebrow">Duyuru</p>
+        <p id="announcement" class="announcement-text"></p>
+      </div>
+    </section>
+
+    <section class="game-grid">
+      <section class="panel village-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Koy</p>
+            <h3>10 Evlik Meydan</h3>
+          </div>
+          <p id="aliveCount" class="muted"></p>
+        </div>
+        <div id="village" class="village-grid"></div>
+      </section>
+
+      <aside class="side-column">
+        <section class="panel role-panel">
+          <p class="eyebrow">Senin Rolun</p>
+          <h3 id="myRole">Beklemede</h3>
+          <p id="roleDescription" class="muted"></p>
+          <p id="nightResult" class="role-result"></p>
+        </section>
+
+        <section class="panel action-panel">
+          <p class="eyebrow">Aksiyon</p>
+          <div id="actions"></div>
+        </section>
+
+        <section class="panel chat-panel">
+          <p class="eyebrow">Koy Sohbeti</p>
+          <div id="messages"></div>
+          <div class="chat-row">
+            <input id="chatInput" maxlength="220" placeholder="Mesaj yaz">
+            <button onclick="sendChat()">Gonder</button>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
